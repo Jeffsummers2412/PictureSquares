@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="camera">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+      <button ion-button (click)="takePicture1()">Take A Picture #1</button>
+      <h2>1ST Picture </h2>
+      <img [src]="image1"  height="150 px" width="165px"/>
+      </ion-col>
+      <ion-col>
+      <button ion-button (click)="takePicture2()">Take A Picture #2</button>
+      <h2>2ND Picture </h2>
+      <img [src]="image2"  height="150 px" width="165px"/>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      <button ion-button (click)="takePicture3()">Take A Picture #3</button>
+      <h2>3RD Picture </h2>
+      <img [src]="image3"  height="150 px" width="165px"/>
+      </ion-col>
+      <ion-col>
+      <button ion-button (click)="takePicture4()">Take A Picture #4</button>
+      <h2>4TH Picture </h2>
+      <img [src]="image4" height="150 px" width="165px"/>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button class="go" (click)="toDisplayPage()">Picture Squares</button>
+</ion-content>
